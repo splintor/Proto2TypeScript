@@ -7,6 +7,10 @@ declare module {package} {
 		toString(): string;
 	}
 
+	export interface IBuilder<T> {
+		decode64(buffer: string) : T;
+	}
+
 	export interface ProtoBufBuilder {
 		{#definitions}{name}: {type};
 		{/definitions}

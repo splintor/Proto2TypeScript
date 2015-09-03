@@ -1,4 +1,4 @@
-export interface {name}Builder {
+export interface {name}Builder extends IBuilder<{name}> {
 		new(): {name};
 		decode(buffer: ArrayBuffer) : {name};
 		//decode(buffer: NodeBuffer) : {name};
